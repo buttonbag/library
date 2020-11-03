@@ -12,13 +12,34 @@
 	<body>
 		<!-- user’s input and store the new book objects into an array -->
 		<form action="">
-			<label for="title">Enter book title</label>
+			<label for="title" class="visually-hidden"
+				>Enter book title</label
+			>
 			<input
 				type="text"
 				name="title"
 				id="title"
 				placeholder="Enter book title"
 			/>
+			<label for="author" class="visually-hidden"
+				>Enter book author</label
+			>
+			<input
+				type="text"
+				name="author"
+				id="author"
+				placeholder="Enter book author"
+			/>
+			<label for="year" class="visually-hidden"
+				>Enter book year</label
+			>
+			<input
+				type="text"
+				name="year"
+				id="year"
+				placeholder="Enter book year"
+			/>
+			<input type="submit" value="+ book" />
 		</form>
 
 		<main>
