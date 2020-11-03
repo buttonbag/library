@@ -1,26 +1,30 @@
-const titleField = document.querySelector('input[name="title"]');
-const form = document.querySelector('form');
-const booksList = document.querySelector('#booksList');
-
 let myLibrary = [];
+
+// Book.prototype.info = () => {
+// 	return `${title}, ${author}, ${year}`;
+// };
 
 function Book(title, author, year) {
 	// the constructor...
 	this.title = title;
 	this.author = author;
 	this.year = year;
-	console.log(title, author, year);
 }
 
-function addBookToLibrary(elm) {
-	// do stuff here
-	myLibrary.push(elm);
-	booksList.innerHTML = myLibrary.join(', ');
+function addBookToLibrary() {
+	const title = document.querySelector('#title').value;
+	const author = document.querySelector('#author').value;
+	const year = document.querySelector('#year').value;
+
+	// store the new book objects into an array
+	const newBook = new Book(title, author, year);
+	myLibrary.push(newBook);
 }
 
-form.addEventListener('submit', (e) => {
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (e) {
 	e.preventDefault();
-	const myBook = titleField.value;
-	addBookToLibrary(myBook);
-	titleField.value = '';
+	addBookToLibrary();
+	form.reset();
 });
