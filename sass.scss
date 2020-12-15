@@ -32,6 +32,16 @@ form {
 	}
 }
 
+#booksList {
+	font-size: 2.3rem;
+	line-height: 1.5;
+	text-transform: capitalize;
+	table {
+		border: 1px solid black;
+		padding: 2rem;
+	}
+}
+
 /* accessibility */
 .visually-hidden {
 	border: 0;

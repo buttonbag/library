@@ -2,43 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Library</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- user’s input and store the new book objects into an array -->
 		<form action="">
-			<label for="title" class="visually-hidden"
-				>Enter book title</label
-			>
+			<label for="title" class="visually-hidden">Enter book title</label>
 			<input
 				type="text"
 				name="title"
 				id="title"
 				placeholder="Enter book title"
 			/>
-			<label for="author" class="visually-hidden"
-				>Enter book author</label
-			>
+			<label for="author" class="visually-hidden">Enter book author</label>
 			<input
 				type="text"
 				name="author"
 				id="author"
 				placeholder="Enter book author"
 			/>
-			<label for="year" class="visually-hidden"
-				>Enter book year</label
-			>
-			<input
-				type="text"
-				name="year"
-				id="year"
-				placeholder="Enter book year"
-			/>
+			<label for="year" class="visually-hidden">Enter book year</label>
+			<input type="text" name="year" id="year" placeholder="Enter book year" />
 			<input type="submit" value="+ book" />
 		</form>
 
@@ -47,6 +33,17 @@
 			<section>
 				<ul id="booksList">
 					<!-- list of books items go here -->
+					<table>
+						<tr>
+							<td>title</td>
+						</tr>
+						<tr>
+							<td>author</td>
+						</tr>
+						<tr>
+							<td>year</td>
+						</tr>
+					</table>
 				</ul>
 			</section>
 		</main>
