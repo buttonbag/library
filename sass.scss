@@ -16,12 +16,17 @@ form {
 	border: 1px solid;
 	border-radius: 1rem;
 
-	input {
+	input,
+	label {
 		font-size: 2rem;
 		margin: 0.5rem 0;
 		border: 0;
 		border-bottom: 1px solid;
 		width: 100%;
+
+		&[type='checkbox'] {
+			width: auto;
+		}
 
 		&[type='submit'] {
 			border: 0;
@@ -36,6 +41,10 @@ form {
 	font-size: 2.3rem;
 	line-height: 1.5;
 	text-transform: capitalize;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	padding: 0;
 	table {
 		border: 1px solid black;
 		padding: 2rem;

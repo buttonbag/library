@@ -16,14 +16,20 @@ form {
   border: 1px solid;
   border-radius: 1rem;
 }
-form input {
+form input,
+form label {
   font-size: 2rem;
   margin: 0.5rem 0;
   border: 0;
   border-bottom: 1px solid;
   width: 100%;
 }
-form input[type=submit] {
+form input[type=checkbox],
+form label[type=checkbox] {
+  width: auto;
+}
+form input[type=submit],
+form label[type=submit] {
   border: 0;
   margin: 1rem 0;
   padding: 0.5rem 0.2rem;
@@ -34,6 +40,10 @@ form input[type=submit] {
   font-size: 2.3rem;
   line-height: 1.5;
   text-transform: capitalize;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0;
 }
 #booksList table {
   border: 1px solid black;
